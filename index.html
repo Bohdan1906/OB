@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Ocean Breaze»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Ocean Breaze»</h1>
+		<div class="rootpage__info">
+			Опис проєкту
+		</div>
+
+		<div class="rootpage__blocks">
+			<div class="rootpage__pages">
+				<h2>Готові сторінки:</h2>
+				<ol class="rootpage__list">
+					<li><a target="_blank" href="home.html">Home</a></li>
+					<li><a target="_blank" href="about-us.html">About us</a></li>
+					<li><a target="_blank" href="services.html">Services</a></li>
+					<li><a target="_blank" href="our-team.html">Our team</a></li>
+					<li><a target="_blank" href="contact.html">Contact</a></li>
+					<li><a target="_blank" href="terms-and-conditions.html">Terms And Conditions</a></li>
+					<li><a target="_blank" href="careers.html">Careers</a></li>
+				</ol>
+				<h2>Попапи:</h2>
+				<ol class="rootpage__list">
+					<li><a target="_blank" href="home.html#"></a></li>
+				</ol>
+			</div>
+
+			<div class="rootpage__items">
+				<div class="rootpage__tnx">
+					<h2>Дякую за замовлення!</h2>
+					<p>Буду радий гарному відгуку.</p>
+					<p>Звертайтесь ще!</p>
+				</div>
+				<div class="rootpage__contacts">
+					<h2>Мої контакти:</h2>
+					<p>Пошта: <a href="mailto:bohdanh19@ukr.net">Bohdanh19@ukr.net</a></p>
+					<p>Пошта: <a href="mailto:bohdan19@gmail.com">Bohdan19@gmail.com</a></p>
+					<p>Соц. мережі: <a href="https://wa.me/380502956871">Whatsapp</a></p>
+					<p>Соц. мережі: <a href="https://www.linkedin.com/in/bohdan-hotra-666294123/">Linkedin</a></p>
+					<p>Соц. мережі: <a href="https://t.me/Bohdan1982">Telegram</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: rgb(39, 106, 14);
+		background: linear-gradient(149deg, rgba(39, 106, 14, 1) 0%, rgba(15, 95, 17, 1) 0%, rgba(19, 77, 48, 0.7847514005602241) 0%, rgba(73, 121, 9, 1) 0%, rgba(2, 0, 36, 1) 3%, rgba(0, 212, 255, 1) 43%, rgba(232, 227, 50, 1) 57%, rgba(206, 221, 128, 1) 100%, rgba(61, 136, 51, 1) 100%);
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+		margin: 0px 0px 0px 10px;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.8rem;
+		margin: 0px 0px 4rem 30px;
+		text-shadow: 4px 5px 2px rgba(0, 0, 0, 0.7);
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 3rem 30px;
+	}
+
+	.rootpage__blocks {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		width: 100%;
+	}
+
+	.rootpage__pages {
+		padding-left: 30px;
+	}
+
+	.rootpage__items {
+		display: grid;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 40px;
+		padding: 20px 65px;
+		line-height: 140%;
+		border: solid 1px rgba(2, 0, 36, 1);
+		box-shadow: 13px 13px 16px 6px rgba(0, 0, 0, 0.85);
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: rgb(207, 32, 32);
+		background: linear-gradient(135deg, rgba(207, 32, 32, 1) 20%, rgba(208, 80, 30, 1) 63%, rgba(203, 140, 30, 0.5914740896358543) 88%);
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: rgb(5, 87, 9);
+		background: linear-gradient(135deg, rgba(5, 87, 9, 1) 0%, rgba(25, 128, 16, 1) 30%, rgba(28, 198, 44, 1) 60%, rgba(86, 203, 30, 1) 80%, rgba(24, 191, 35, 0.9332107843137255) 93%);
+		margin: 0px 0px 2rem 0px;
+	}
+</style>
+
+</html>
